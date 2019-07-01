@@ -1,3 +1,4 @@
+/*
 #ifdef __wasm32__
 #define _Addr int
 #define _Int64 long long
@@ -9,6 +10,13 @@
 #define _Reg long
 
 #endif
+*/
+
+    
+#define _Addr __PTRDIFF_TYPE__
+#define _Int64 __INT64_TYPE__
+#define _Reg __PTRDIFF_TYPE__
+
 
 TYPEDEF __builtin_va_list va_list;
 TYPEDEF __builtin_va_list __isoc_va_list;
